@@ -1,0 +1,19 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {
+      "extraNixConfig": [
+        "experimental-features = nix-command flakes",
+        "filter-syscalls = false"
+      ],
+      "multiUser": true
+    },
+  },
+
+  // the easiest way to enable FUSE
+  "remoteUser": "root",
+  "privileged": true
+
+}
