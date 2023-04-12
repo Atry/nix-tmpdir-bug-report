@@ -9,10 +9,9 @@
         "filter-syscalls = false"
       ],
       "multiUser": true
-    },
+    }
   },
 
-  // the easiest way to enable FUSE
   "remoteUser": "root",
   "privileged": true
 
